@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MDCINVENTARIO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--LOGGIN-->
+    <string name="UserSession">Ingresa Usuario</string>
+    <string name="password">Ingresa Contraseña</string>
+    <string name="btnIniciarSesion">Iniciar Sesion</string>
+
+    <!--FRAGMENT ALMACEN-->
+    <string name="sptext">Ninguno</string>
+    <string name="SiguienteAlmacen">Siguiente</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--ACTIVITI SCANN PRODUCTOS-->
+    <string name="tvLetreroProducto">Agrega los Productos</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="tvCodBar">CODIGO DE BARA / QR</string>
+    <string name="etCodBar">888888888888888888888888888</string>
+    <string name="tvCodProd">CODIGO DEL PRODUCTO</string>
+    <string name="etCodProd">PROD1524</string>
+    <string name="tvDescrip">DESCRIPCION DEL PRODUCTO</string>
+    <string name="tvDescrip2">AQUI SE MUESTRA LA DESCRIPCION DEL PRODUCTO PARA LA PRUEBA SIN CONEXION</string>
+    <string name="tvStockAgregar">STOCK A AGREGAR</string>
+    <string name="btnAgregarStock">Agregar</string>
+
+
+</resources>

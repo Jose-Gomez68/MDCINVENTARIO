@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.loggin.LogginMdc">
+
+    <RelativeLayout
+        android:id="@+id/RelativeL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/mercantillogor">
+
+        </ImageView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtUser"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/ivLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:boxStrokeColor="#F8FFFFFF"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/etUser"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="12dp"
+                android:hint="@string/UserSession">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPassword"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/txtUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="#F8FFFFFF"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPasword"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="12dp"
+                android:hint="@string/password"
+                android:inputType="textPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/txtPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/azul_mdc"
+            android:hint="@string/btnIniciarSesion"
+            android:textColorHint="@color/white"
+            app:cornerRadius="20dp">
+
+        </Button>
+
+    </RelativeLayout>
+
+</ScrollView>

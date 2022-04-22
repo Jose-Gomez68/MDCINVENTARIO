@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.almacenyproductos.CargarProductosDb">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+               android:id="@+id/tvLetreroProd"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="15dp"
+               android:text="@string/tvLetreroProducto"
+               android:textSize="30dp"
+               android:textStyle="bold"></TextView>
+
+           <TextView
+               android:id="@+id/tvCodBar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/tvLetreroProd"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:text="@string/tvCodBar"
+               android:textSize="18dp"
+               android:textStyle="bold">
+           </TextView>
+
+           <ImageView
+               android:id="@+id/ivQrScanner"
+               android:layout_width="40dp"
+               android:layout_height="43dp"
+               android:layout_below="@+id/tvCodBar"
+               android:layout_marginStart="10dp"
+               android:layout_marginLeft="340dp"
+               android:layout_marginTop="7dp"
+               android:layout_toEndOf="@+id/etCodBar"
+               android:src="@drawable/ic_qr_code_scanner_24">
+
+           </ImageView>
+
+           <EditText
+               android:id="@+id/etCodBar"
+               android:layout_width="280dp"
+               android:layout_height="39dp"
+               android:layout_below="@+id/tvCodBar"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:hint="@string/etCodBar"
+               android:textAlignment="center"
+               android:textSize="16dp"
+               android:textStyle="bold">
+
+           </EditText>
+
+           <Button
+               android:id="@+id/btnScan"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/etCodBar"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="12dp"
+               android:text="SCAN">
+
+           </Button>
+
+           <TextView
+               android:id="@+id/tvCodProd"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/btnScan"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:text="@string/tvCodProd"
+               android:textSize="18dp"
+               android:textStyle="bold">
+
+           </TextView>
+
+           <TextView
+               android:id="@+id/tvCodProd2"
+               android:layout_width="300dp"
+               android:layout_height="39dp"
+               android:layout_below="@+id/tvCodProd"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:hint="@string/etCodProd"
+               android:textAlignment="center"
+               android:textSize="16dp"
+               android:textStyle="bold">
+
+           </TextView>
+
+           <TextView
+               android:id="@+id/tvDescrip"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/tvCodProd2"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:text="@string/tvDescrip"
+               android:textSize="18dp"
+               android:textStyle="bold">
+           </TextView>
+
+           <ScrollView
+               android:id="@+id/svContenedor"
+               android:layout_width="wrap_content"
+               android:layout_height="105dp"
+               android:layout_below="@id/tvDescrip"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp">
+
+               <TextView
+                   android:id="@+id/tvDescrip2"
+                   android:layout_width="300dp"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/tvDescrip"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="3dp"
+                   android:hint="@string/tvDescrip2"
+                   android:textAlignment="center"
+                   android:textSize="16dp"
+                   android:textStyle="bold">
+
+               </TextView>
+           </ScrollView>
+
+           <TextView
+               android:id="@+id/tvStock"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/svContenedor"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:text="STOCK"
+               android:textSize="18dp"
+               android:textStyle="bold"></TextView>
+
+           <TextView
+               android:id="@+id/tvStock2"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/tvStock"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="3dp"
+               android:hint="250pz"
+               android:textAlignment="center"
+               android:textSize="16dp"
+               android:textStyle="bold">
+
+           </TextView>
+
+           <TextView
+               android:id="@+id/tvStockAgregar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/tvStock2"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:text="@string/tvStockAgregar"
+               android:textSize="18dp"
+               android:textStyle="bold">
+           </TextView>
+
+           <EditText
+               android:id="@+id/etStockAgregar2"
+               android:layout_width="60dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/tvStockAgregar"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="3dp"
+               android:inputType="number"
+               android:hint="0"
+               android:textAlignment="center"
+               android:textSize="16dp"
+               android:textStyle="bold">
+
+           </EditText>
+
+           <ImageView
+               android:id="@+id/ivMas"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_below="@+id/tvStockAgregar"
+               android:layout_marginStart="20dp"
+               android:layout_marginLeft="252dp"
+               android:layout_marginTop="3dp"
+               android:layout_toEndOf="@+id/etStockAgregar2"
+               android:src="@drawable/plus">
+
+           </ImageView>
+
+           <ImageView
+               android:id="@+id/ivMenos"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_below="@+id/tvStockAgregar"
+               android:layout_marginLeft="100dp"
+               android:layout_marginTop="3dp"
+               android:layout_marginEnd="20dp"
+               android:layout_toStartOf="@+id/etStockAgregar2"
+               android:src="@drawable/negative">
+
+           </ImageView>
+
+           <Button
+               android:id="@+id/btnAgregarProd"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/etStockAgregar2"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="20dp"
+               android:text="@string/btnAgregarStock">
+
+           </Button>
+       </RelativeLayout>
+   </ScrollView>
+
+</RelativeLayout>
